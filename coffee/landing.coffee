@@ -29,6 +29,18 @@ $(document).ready ->
   resized = false
   timeout = null
 
+  backgroundImageLoad = ($this) ->
+    src = "/img/landing/background.jpg"
+    if src
+      img = new Image()
+      img.style.display = "none"
+      img.onload = ->
+        $this.fadeIn(1000)
+        img.remove()
+    img.src = src
+
+  backgroundImageLoad($("#content-wrap"))
+
   setLandingHeight()
 
   landingRefreshTimer = ->

@@ -9,6 +9,7 @@ body {
   background-image: url("/img/landing/background.jpg");
   background-size: cover;
   position: relative;
+  display: none;
 }
 #content {
   background: rgba($dark-blue-gray, .97);

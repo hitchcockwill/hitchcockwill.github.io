@@ -96,9 +96,23 @@
   };
 
   $(document).ready(function() {
-    var landingRefreshTimer, resized, timeout, windowResizeTimer;
+    var backgroundImageLoad, landingRefreshTimer, resized, timeout, windowResizeTimer;
     resized = false;
     timeout = null;
+    backgroundImageLoad = function($this) {
+      var img, src;
+      src = "/img/landing/background.jpg";
+      if (src) {
+        img = new Image();
+        img.style.display = "none";
+        img.onload = function() {
+          $this.fadeIn(1000);
+          return img.remove();
+        };
+      }
+      return img.src = src;
+    };
+    backgroundImageLoad($("#content-wrap"));
     setLandingHeight();
     landingRefreshTimer = function() {
       return timeout = setTimeout(function() {
