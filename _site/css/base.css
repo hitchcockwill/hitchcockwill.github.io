@@ -1,10 +1,16 @@
 /* line 7, ../scss/base.scss */
-footer {
-  margin: 30px 0;
-  color: #999;
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
 }
 
 /* line 12, ../scss/base.scss */
+#content footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 17, ../scss/base.scss */
 a.btn {
   display: inline-block;
   border-radius: 2px;
@@ -14,11 +20,11 @@ a.btn {
   padding: 6px 20px;
 }
 
-/* line 21, ../scss/base.scss */
+/* line 26, ../scss/base.scss */
 a.btn.arrow-left, a.btn.arrow-right {
   position: relative;
 }
-/* line 23, ../scss/base.scss */
+/* line 28, ../scss/base.scss */
 a.btn.arrow-left:after, a.btn.arrow-right:after {
   width: 0;
   height: 0;
@@ -34,26 +40,31 @@ a.btn.arrow-left:after, a.btn.arrow-right:after {
   z-index: 200;
 }
 
-/* line 38, ../scss/base.scss */
+/* line 43, ../scss/base.scss */
 a.btn.arrow-left {
   padding-left: 10px;
   border-radius: 4px 2px 2px 4px;
   margin-left: 20px;
 }
-/* line 42, ../scss/base.scss */
+/* line 47, ../scss/base.scss */
 a.btn.arrow-left:after {
   border-right: 19px solid #1685be;
   left: -18px;
 }
 
-/* line 47, ../scss/base.scss */
+/* line 52, ../scss/base.scss */
 a.btn.arrow-right {
   padding-right: 10px;
   border-radius: 2px 4px 4px 2px;
   margin-right: 20px;
 }
-/* line 51, ../scss/base.scss */
+/* line 56, ../scss/base.scss */
 a.btn.arrow-right:after {
   border-left: 19px solid #1685be;
   right: -18px;
+}
+
+/* line 67, ../scss/base.scss */
+span.icon {
+  display: inline-block;
 }

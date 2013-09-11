@@ -4,18 +4,29 @@
 // Colors
 // **********************************************************************
 
-$gray:          #555555;
-$gray-lighten:  #999999;
-$gray-darken:   #333333;
-$blue:          #1685be;
-$light-gray:    #dddddd;
-$off-white:     #f1f1f1;
+$gray:            #555555;
+$gray-lighten:    #999999;
+$gray-darken:     #333333;
+$light-gray:      #dddddd;
+$off-white:       #f1f1f1;
+  
+$teal:            #8ac2b0;
+$red:             #f95759;
+$red-dark:        #d93c3e;
+$dark-blue-gray:  #293033;
+$med-blue-gray:   #62737a;
+  
+$blue:            #1685be;
+
+$dribbble:        #ea4c89;
+$twitter:         #4099ff;
+$github:          #4183c4;
 
 // **********************************************************************
 // Fonts
 // **********************************************************************
 
-$body-font: 'Open Sans', sans-serif;
+$body-font: 'Source Sans Pro', sans-serif;
 
 // **********************************************************************
 // Mixins

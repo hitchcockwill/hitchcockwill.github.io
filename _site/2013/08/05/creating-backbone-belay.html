@@ -3,20 +3,25 @@
 <head>
   <meta charset=utf-8 />
   <title>  Creating Backbone Belay |  Will Hitchcock </title>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/icons.css">
   <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link rel="stylesheet" href="/css/blog.css">
-  <link rel="stylesheet" href="/css/post.css">
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  
+    <link rel="stylesheet" href="/css/post.css">
+  
+    <link rel="stylesheet" href="/css/syntax.css">
+  
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="/img/favicon.png">
 </head>
 <body>
   <!--[if lte IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <div id="content" class="blog-post">
-    
+  <div id="content-wrap">
+    <div id="content" class="blog-post">
+      
 <div class="image-wrap">
   
     <span class="main-image" data-src="/blog/img/half-dome.jpg">
@@ -110,8 +115,13 @@
 </div>
   
 
-    <footer>&copy;2013 Will Hitchcock | willhitchcock.com</footer>
-  </div> <!-- end of content -->
+      <footer class="row">
+        <div class="large-12 small-12 columns">
+          &copy;2013 Will Hitchcock | willhitchcock.com
+        </div>
+      </footer>
+    </div> <!-- end of content -->    
+  </div>
 
   <script src="/javascripts/libs/jquery-1.7.1.min.js"></script>
   <script src="/javascripts/plugins.js"></script>

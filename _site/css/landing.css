@@ -1,0 +1,240 @@
+/* line 3, ../scss/landing.scss */
+body {
+  position: relative;
+}
+
+/* line 7, ../scss/landing.scss */
+#content-wrap {
+  background-image: url("/img/landing/background.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* line 12, ../scss/landing.scss */
+#content {
+  background: rgba(41, 48, 51, 0.97);
+  position: relative;
+}
+
+/* line 17, ../scss/landing.scss */
+#landing-content > * {
+  -webkit-transition: padding 0.2s;
+  -moz-transition: padding 0.2s;
+  -o-transition: padding 0.2s;
+  transition: padding 0.2s;
+}
+
+/* line 21, ../scss/landing.scss */
+h1 {
+  margin: 0 0 20px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 900;
+  color: #8ac2b0;
+}
+
+/* line 29, ../scss/landing.scss */
+p {
+  font-size: 25px;
+  line-height: 37px;
+  font-weight: 200;
+  color: #f1f1f1;
+}
+/* line 34, ../scss/landing.scss */
+p a, p a:visited {
+  color: #8ac2b0;
+  border: none;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+/* line 38, ../scss/landing.scss */
+p a:hover, p a:active, p a:visited:hover, p a:visited:active {
+  color: #68b199;
+}
+
+/* line 45, ../scss/landing.scss */
+div.profile-image img {
+  border-radius: 200px;
+  border: 10px solid rgba(30, 36, 38, 0.8);
+}
+
+/* line 53, ../scss/landing.scss */
+div.connect {
+  margin-top: 44px;
+}
+/* line 51, ../scss/config.scss */
+div.connect:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 56, ../scss/landing.scss */
+div.connect > * {
+  float: left;
+}
+/* line 57, ../scss/landing.scss */
+div.connect h3 {
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #62737a;
+  font-weight: bold;
+}
+/* line 65, ../scss/landing.scss */
+div.connect a.btn {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 17px 20px;
+  background: #f95759;
+  box-shadow: 0 6px 0 #d93c3e;
+  position: relative;
+  -webkit-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+  -moz-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+  -o-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+  transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+}
+/* line 76, ../scss/landing.scss */
+div.connect a.btn:hover {
+  box-shadow: 0 3px 0 #d93c3e;
+  top: 3px;
+}
+/* line 80, ../scss/landing.scss */
+div.connect a.btn:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+/* line 87, ../scss/landing.scss */
+div.connect-section:first-child {
+  width: 220px;
+}
+/* line 89, ../scss/landing.scss */
+div.connect-section:first-child a.btn span.icon {
+  position: relative;
+  font-size: 14px;
+}
+
+/* line 96, ../scss/landing.scss */
+div.connect-section:last-child a.btn {
+  padding: 12px 15px 11px;
+  margin-right: 10px;
+  background: #f1f1f1;
+  box-shadow: 0 6px 0 #cbcbcb;
+  position: relative;
+  min-width: 25px;
+  -webkit-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+  -moz-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+  -o-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+  transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+}
+/* line 104, ../scss/landing.scss */
+div.connect-section:last-child a.btn:hover {
+  box-shadow: 0 3px 0 #f1f1f1;
+  top: 3px;
+}
+/* line 108, ../scss/landing.scss */
+div.connect-section:last-child a.btn:active {
+  box-shadow: none;
+  top: 6px;
+}
+/* line 112, ../scss/landing.scss */
+div.connect-section:last-child a.btn span.icon {
+  font-size: 26px;
+}
+
+/* line 117, ../scss/landing.scss */
+div.connect-section.divider {
+  width: 55px;
+}
+/* line 119, ../scss/landing.scss */
+div.connect-section.divider h4 {
+  color: #62737a;
+  font-size: 16px;
+  margin: 44px 20px 0;
+}
+
+/* line 126, ../scss/landing.scss */
+a.btn.dribbble {
+  color: #ea4c89;
+}
+
+/* line 129, ../scss/landing.scss */
+a.btn.github {
+  color: #4183c4;
+}
+
+/* line 132, ../scss/landing.scss */
+a.btn.twitter {
+  color: #4099ff;
+}
+
+/* line 137, ../scss/landing.scss */
+footer {
+  display: none;
+}
+
+/* line 141, ../scss/landing.scss */
+#landing-footer {
+  color: #62737a;
+  position: absolute;
+  bottom: 20px;
+  width: 400px;
+  margin: 0 auto;
+  margin-left: -200px;
+  left: 50%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 158, ../scss/landing.scss */
+  div.profile-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 540px) {
+  /* line 167, ../scss/landing.scss */
+  div.connect-section.divider {
+    display: none;
+  }
+
+  /* line 170, ../scss/landing.scss */
+  div.connect > * {
+    float: none;
+    margin-bottom: 40px;
+  }
+
+  /* line 175, ../scss/landing.scss */
+  div.connect-section:first-child {
+    width: 100%;
+  }
+  /* line 177, ../scss/landing.scss */
+  div.connect-section:first-child a.btn {
+    display: block;
+  }
+
+  /* line 51, ../scss/config.scss */
+  div.connect-section:last-child div.connect-buttons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 184, ../scss/landing.scss */
+  div.connect-section:last-child a.btn {
+    width: 30%;
+    margin: 0;
+  }
+  /* line 187, ../scss/landing.scss */
+  div.connect-section:last-child a.btn:first-child {
+    margin-right: 4%;
+  }
+  /* line 190, ../scss/landing.scss */
+  div.connect-section:last-child a.btn:last-child {
+    margin-left: 4%;
+  }
+}
