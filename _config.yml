@@ -1,2 +1,2 @@
-exclude: 		['coffee/', 'scss/', 'node_modules/']
+exclude: 		[coffee, scss, node_modules, CNAME, README.md, package.json, Gruntfile.js]
 pygments:   true
