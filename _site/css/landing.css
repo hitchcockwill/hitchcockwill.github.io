@@ -77,6 +77,11 @@ div.connect > * {
   float: left;
 }
 /* line 59, ../scss/landing.scss */
+div.connect div.button-wrap {
+  position: relative;
+  height: 55px;
+}
+/* line 63, ../scss/landing.scss */
 div.connect h3 {
   text-transform: uppercase;
   margin: 0 0 10px;
@@ -85,7 +90,7 @@ div.connect h3 {
   color: #62737a;
   font-weight: bold;
 }
-/* line 67, ../scss/landing.scss */
+/* line 71, ../scss/landing.scss */
 div.connect a.btn {
   font-size: 16px;
   line-height: 16px;
@@ -94,94 +99,103 @@ div.connect a.btn {
   font-weight: bold;
   padding: 17px 20px;
   background: #f95759;
-  box-shadow: 0 6px 0 #d93c3e;
-  position: relative;
-  -webkit-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
-  -moz-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
-  -o-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
-  transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+  border-bottom: 6px solid #d93c3e;
+  border-top: 0px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: border 0.15s, width 0.25s;
+  -moz-transition: border 0.15s, width 0.25s;
+  -o-transition: border 0.15s, width 0.25s;
+  transition: border 0.15s, width 0.25s;
 }
-/* line 78, ../scss/landing.scss */
+/* line 86, ../scss/landing.scss */
 div.connect a.btn:hover {
-  box-shadow: 0 3px 0 #d93c3e;
-  top: 3px;
+  border-bottom: 4px solid #d93c3e;
 }
-/* line 82, ../scss/landing.scss */
+/* line 89, ../scss/landing.scss */
 div.connect a.btn:active {
-  box-shadow: none;
-  top: 6px;
+  border-bottom: none;
 }
 
-/* line 89, ../scss/landing.scss */
-div.connect-section:first-child {
+/* line 95, ../scss/landing.scss */
+div.connect-section:first-child div.button-wrap {
   width: 220px;
 }
-/* line 91, ../scss/landing.scss */
-div.connect-section:first-child a.btn span.icon {
+/* line 97, ../scss/landing.scss */
+div.connect-section:first-child div.button-wrap a.btn span.icon {
   position: relative;
   font-size: 14px;
 }
 
-/* line 98, ../scss/landing.scss */
-div.connect-section:last-child a.btn {
-  padding: 12px 15px 11px;
-  margin-right: 10px;
-  background: #f1f1f1;
-  box-shadow: 0 6px 0 #cbcbcb;
-  position: relative;
-  min-width: 25px;
-  -webkit-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
-  -moz-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
-  -o-transition: box-shadow 0.25s, top 0.25s, width 0.25s;
-  transition: box-shadow 0.25s, top 0.25s, width 0.25s;
+/* line 51, ../scss/config.scss */
+div.connect-section:last-child div.connect-buttons:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* line 106, ../scss/landing.scss */
-div.connect-section:last-child a.btn:hover {
-  box-shadow: 0 3px 0 #f1f1f1;
-  top: 3px;
+div.connect-section:last-child div.button-wrap {
+  width: 52px;
+  float: left;
+  margin-right: 12px;
 }
 /* line 110, ../scss/landing.scss */
-div.connect-section:last-child a.btn:active {
-  box-shadow: none;
-  top: 6px;
+div.connect-section:last-child div.button-wrap:last-child {
+  margin-right: 0;
 }
 /* line 114, ../scss/landing.scss */
+div.connect-section:last-child a.btn {
+  padding: 12px 10px 11px;
+  background: #f1f1f1;
+  border-bottom-color: #cbcbcb;
+}
+/* line 118, ../scss/landing.scss */
+div.connect-section:last-child a.btn:hover {
+  border-bottom: 4px solid #cbcbcb;
+}
+/* line 121, ../scss/landing.scss */
+div.connect-section:last-child a.btn:active {
+  border-bottom: none;
+}
+/* line 124, ../scss/landing.scss */
 div.connect-section:last-child a.btn span.icon {
   font-size: 26px;
 }
 
-/* line 119, ../scss/landing.scss */
+/* line 129, ../scss/landing.scss */
 div.connect-section.divider {
   width: 55px;
 }
-/* line 121, ../scss/landing.scss */
+/* line 131, ../scss/landing.scss */
 div.connect-section.divider h4 {
   color: #62737a;
   font-size: 16px;
-  margin: 44px 20px 0;
+  margin: 47px 20px 0 22px;
 }
 
-/* line 128, ../scss/landing.scss */
+/* line 138, ../scss/landing.scss */
 a.btn.dribbble {
   color: #ea4c89;
 }
 
-/* line 131, ../scss/landing.scss */
+/* line 141, ../scss/landing.scss */
 a.btn.github {
   color: #4183c4;
 }
 
-/* line 134, ../scss/landing.scss */
+/* line 144, ../scss/landing.scss */
 a.btn.twitter {
   color: #4099ff;
 }
 
-/* line 139, ../scss/landing.scss */
+/* line 149, ../scss/landing.scss */
 footer {
   display: none;
 }
 
-/* line 143, ../scss/landing.scss */
+/* line 153, ../scss/landing.scss */
 #landing-footer {
   color: #62737a;
   position: absolute;
@@ -194,29 +208,29 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 160, ../scss/landing.scss */
+  /* line 170, ../scss/landing.scss */
   div.profile-image {
     display: none;
   }
 }
 @media only screen and (max-width: 540px) {
-  /* line 169, ../scss/landing.scss */
+  /* line 179, ../scss/landing.scss */
   div.connect-section.divider {
     display: none;
   }
 
-  /* line 172, ../scss/landing.scss */
+  /* line 182, ../scss/landing.scss */
   div.connect > * {
     float: none;
     margin-bottom: 40px;
   }
 
-  /* line 177, ../scss/landing.scss */
-  div.connect-section:first-child {
+  /* line 187, ../scss/landing.scss */
+  div.connect-section:first-child div.button-wrap {
     width: 100%;
   }
-  /* line 179, ../scss/landing.scss */
-  div.connect-section:first-child a.btn {
+  /* line 189, ../scss/landing.scss */
+  div.connect-section:first-child div.button-wrap a.btn {
     display: block;
   }
 
@@ -226,17 +240,23 @@ footer {
     display: table;
     clear: both;
   }
-  /* line 186, ../scss/landing.scss */
-  div.connect-section:last-child a.btn {
-    width: 30%;
+  /* line 196, ../scss/landing.scss */
+  div.connect-section:last-child div.button-wrap {
     margin: 0;
+    width: 30%;
   }
-  /* line 189, ../scss/landing.scss */
-  div.connect-section:last-child a.btn:first-child {
+  /* line 199, ../scss/landing.scss */
+  div.connect-section:last-child div.button-wrap:first-child {
     margin-right: 4%;
   }
-  /* line 192, ../scss/landing.scss */
-  div.connect-section:last-child a.btn:last-child {
+  /* line 200, ../scss/landing.scss */
+  div.connect-section:last-child div.button-wrap:last-child {
     margin-left: 4%;
+  }
+  /* line 202, ../scss/landing.scss */
+  div.connect-section:last-child a.btn {
+    display: block;
+    width: 100%;
+    margin: 0;
   }
 }
