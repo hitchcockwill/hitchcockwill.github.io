@@ -4,52 +4,84 @@
   margin: 60px auto;
 }
 /* line 7, ../scss/blog.scss */
-#content.blog-layout h2 + p {
-  margin: -5px 0 28px;
-}
-/* line 10, ../scss/blog.scss */
 #content.blog-layout h3 {
-  font-size: 18px;
-  margin: 0;
+  font-size: 22px;
+  line-height: 20px;
 }
-/* line 15, ../scss/blog.scss */
+/* line 12, ../scss/blog.scss */
 #content.blog-layout p.published {
-  margin: 3px 0 0;
   color: #999999;
 }
 
-/* line 22, ../scss/blog.scss */
-ul.post-list li {
-  border-bottom: 1px solid #ececec;
+/* line 17, ../scss/blog.scss */
+h2.posts {
+  margin: 50px 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
 }
+
 /* line 24, ../scss/blog.scss */
-ul.post-list li:last-child {
-  border-bottom: none;
+ul.post-list {
+  margin: 0 0 50px;
 }
-/* line 27, ../scss/blog.scss */
+/* line 26, ../scss/blog.scss */
+ul.post-list li {
+  border-top: 1px solid #ececec;
+}
+/* line 28, ../scss/blog.scss */
 ul.post-list li > a {
-  padding: 10px 0;
+  padding: 16px 0;
   display: block;
-  -webkit-transition: color 0.25s ease-out;
-  -moz-transition: color 0.25s ease-out;
-  -o-transition: color 0.25s ease-out;
-  transition: color 0.25s ease-out;
+  position: relative;
+  -webkit-transition: color 0.35s;
+  -moz-transition: color 0.35s;
+  -o-transition: color 0.35s;
+  transition: color 0.35s;
 }
-/* line 51, ../scss/config.scss */
+/* line 53, ../scss/config.scss */
 ul.post-list li > a:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 33, ../scss/blog.scss */
+/* line 35, ../scss/blog.scss */
 ul.post-list li > a:hover {
-  color: #333333;
+  color: #f95759;
 }
 /* line 37, ../scss/blog.scss */
-ul.post-list li > a h3 {
-  float: left;
+ul.post-list li > a:hover div.image-wrap {
+  box-shadow: 0 0 0 5px #f95759;
 }
-/* line 38, ../scss/blog.scss */
+/* line 42, ../scss/blog.scss */
+ul.post-list li > a div.image-wrap {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -15px;
+  box-shadow: 0 0 0 3px #dddddd;
+  -webkit-transition: box-shadow 0.35s;
+  -moz-transition: box-shadow 0.35s;
+  -o-transition: box-shadow 0.35s;
+  transition: box-shadow 0.35s;
+}
+/* line 53, ../scss/blog.scss */
+ul.post-list li > a div.image-wrap img {
+  height: 30px;
+}
+/* line 58, ../scss/blog.scss */
+ul.post-list li > a h3 {
+  margin: 0 150px 0 40px;
+}
+/* line 61, ../scss/blog.scss */
 ul.post-list li > a p {
-  float: right;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  font-size: .9em;
 }

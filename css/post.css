@@ -26,93 +26,120 @@
   z-index: 100;
 }
 /* line 29, ../scss/post.scss */
+#content.blog-post div.post-content {
+  margin-bottom: 80px;
+}
+/* line 33, ../scss/post.scss */
 #content.blog-post article, #content.blog-post footer {
   max-width: 660px;
   padding: 0 30px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 36, ../scss/post.scss */
+/* line 40, ../scss/post.scss */
 #content.blog-post article {
   font-size: 16px;
   line-height: 1.75em;
 }
-/* line 40, ../scss/post.scss */
+/* line 44, ../scss/post.scss */
 #content.blog-post article h2 {
   font-size: 24px;
-  margin-top: 30px;
+  margin: 50px 0 14px;
+  color: #f95759;
 }
-/* line 45, ../scss/post.scss */
+/* line 50, ../scss/post.scss */
 #content.blog-post article h3 {
   font-size: 18px;
   font-weight: bold;
+  margin: 14px 0 6px;
 }
-/* line 50, ../scss/post.scss */
+/* line 56, ../scss/post.scss */
 #content.blog-post article h4 {
   font-weight: bold;
   font-size: 16px;
+  text-transform: uppercase;
+  margin: 14px 0 6px;
 }
-/* line 55, ../scss/post.scss */
+/* line 63, ../scss/post.scss */
 #content.blog-post article h5 {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 60, ../scss/post.scss */
+/* line 68, ../scss/post.scss */
 #content.blog-post article p code {
   background: #f1f1f1;
   border-radius: 2px;
-  padding: 0 1px;
-  color: #777;
+  padding: 2px 4px;
+  color: #666;
+  position: relative;
+  top: -1px;
+  font-size: .8em;
 }
-/* line 67, ../scss/post.scss */
+/* line 78, ../scss/post.scss */
 #content.blog-post article pre {
   background: #f1f1f1;
   padding: 10px;
   border-radius: 2px;
 }
-/* line 73, ../scss/post.scss */
+/* line 84, ../scss/post.scss */
 #content.blog-post article .post-content img {
   margin-bottom: 16px;
   border-radius: 2px;
   width: 100%;
 }
-/* line 80, ../scss/post.scss */
+/* line 90, ../scss/post.scss */
+#content.blog-post article p a {
+  text-decoration: underline;
+}
+/* line 95, ../scss/post.scss */
 #content.blog-post h1 {
   font-size: 32px;
   margin: 40px 0 10px;
   line-height: 32px;
 }
-/* line 86, ../scss/post.scss */
+/* line 101, ../scss/post.scss */
 #content.blog-post div.meta {
   margin: 0 0 30px;
 }
-/* line 51, ../scss/config.scss */
+/* line 53, ../scss/config.scss */
 #content.blog-post div.meta:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 89, ../scss/post.scss */
+/* line 104, ../scss/post.scss */
 #content.blog-post div.meta > * {
   float: left;
 }
-/* line 91, ../scss/post.scss */
+/* line 106, ../scss/post.scss */
 #content.blog-post div.meta img {
   border-radius: 30px;
   margin-right: 10px;
 }
-/* line 95, ../scss/post.scss */
+/* line 110, ../scss/post.scss */
 #content.blog-post div.meta p {
   margin: 0;
   font-size: 14px;
 }
-/* line 98, ../scss/post.scss */
+/* line 113, ../scss/post.scss */
 #content.blog-post div.meta p span.published {
   color: #999;
   margin-left: 18px;
 }
-/* line 105, ../scss/post.scss */
-#content.blog-post a.all-posts {
+/* line 120, ../scss/post.scss */
+#content.blog-post div.links a {
+  display: block;
+}
+/* line 124, ../scss/post.scss */
+#content.blog-post div.btn-wrap.all-posts {
+  width: 190px;
+}
+/* line 126, ../scss/post.scss */
+#content.blog-post div.btn-wrap.all-posts a {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+/* line 132, ../scss/post.scss */
+#content.blog-post div#about-me {
+  margin-top: 50px;
 }

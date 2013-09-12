@@ -7,6 +7,7 @@
 body {
   font-family: $body-font;
   font-size: 16px;
+  color: $gray;
 }
 
 #content footer {
@@ -14,48 +15,67 @@ body {
   text-align: center;
 }
 
-a.btn {
-  display: inline-block;
-  border-radius: 2px;
-  background: $blue;
-  color: white;
-  font-size: 11px;
-  padding: 6px 20px;
+
+// **********************************************************************
+// Type
+// **********************************************************************
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 900;
+  color: $teal;
 }
 
-a.btn.arrow-left, a.btn.arrow-right {
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  a, a:visited {
+    color: $teal;
+    border: none;
+    @include transition(color .25s);
+    &:hover, &:active {
+      color: darken($teal, 15%);
+    }
+  }
+}
+
+// **********************************************************************
+// Buttons
+// **********************************************************************
+
+div.btn-wrap {
   position: relative;
-  &:after {
-    width: 0;
-    height: 0;
-    display: inline-block;
-    content: "&darr;";
-    text-indent: -99999px;
-    vertical-align: top; 
-    border-top: 19px solid transparent;
-    border-bottom: 19px solid transparent;
-    position: absolute;
-    top: 50%;
-    margin-top: -19px;
-    z-index: 200;
-  }
+  height: 55px;
 }
-a.btn.arrow-left {
-  padding-left: 10px;
-  border-radius: 4px 2px 2px 4px;
-  margin-left: 20px;
-  &:after {
-    border-right: 19px solid $blue;
-    left: -18px;
+
+a.btn {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 17px 20px;
+  background: $teal;
+  border-bottom: 6px solid $teal-dark;
+  border-top: 0px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: $off-white;
+  border-radius: 2px;
+  @include transition(border .15s, width .25s);
+  &:hover {
+    border-bottom: 4px solid $teal-dark;
   }
-}
-a.btn.arrow-right {
-  padding-right: 10px;
-  border-radius: 2px 4px 4px 2px;
-  margin-right: 20px;
-  &:after {
-    border-left: 19px solid $blue;
-    right: -18px;
+  &:active {
+    border-bottom: none;
+  }
+  span.icon {
+    font-size: 13px;
   }
 }
 
@@ -66,4 +86,26 @@ a.btn.arrow-right {
 
 span.icon {
   display: inline-block;
+}
+
+
+// **********************************************************************
+// About me
+// **********************************************************************
+
+div#about-me {
+  padding: 20px;
+  border-radius: 2px;
+  background: $off-white2;
+  img.profile {
+    border-radius: 200px;
+  }
+  p {
+    font-size: .95em;
+    line-height: 1.8em;
+    font-style: italic;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

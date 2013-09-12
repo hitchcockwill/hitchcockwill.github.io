@@ -24,7 +24,13 @@ styles: ["post.css", "syntax.css"]
       </p>
     </div>
     <div class="post-content">{{ content }}</div>
-    <a class="all-posts btn arrow-left" href="/blog/">Back to posts</a>
-  </article> 
+    <div class="btn-wrap all-posts">
+      <a class="btn" href="/blog/">
+        <span class="icon icon-arrow-left"></span>
+        Back to posts
+      </a>      
+    </div>
+    {% include about_me.html %}
+  </article>
 </div>
   

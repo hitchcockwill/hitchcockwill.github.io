@@ -26,6 +26,10 @@
     z-index: 100;
   }
 
+  div.post-content {
+    margin-bottom: 80px;
+  }
+
   article, footer {
     max-width: 660px;
     padding: 0 30px;
@@ -39,17 +43,21 @@
 
     h2 {
       font-size: 24px;
-      margin-top: 30px;
+      margin: 50px 0 14px;
+      color: $red;
     }
 
     h3 {
       font-size: 18px;
       font-weight: bold;
+      margin: 14px 0 6px;
     }
 
     h4 {
       font-weight: bold;
       font-size: 16px;
+      text-transform: uppercase;
+      margin: 14px 0 6px;
     }
 
     h5 {
@@ -60,8 +68,11 @@
     p code {
       background: $off-white;
       border-radius: 2px;
-      padding: 0 1px;
-      color: #777;
+      padding: 2px 4px;
+      color: #666;
+      position: relative;
+      top: -1px;
+      font-size: .8em;
     }
 
     pre {
@@ -74,6 +85,10 @@
       margin-bottom: 16px;
       border-radius: 2px;
       width: 100%;
+    }
+
+    p a {
+      text-decoration: underline;
     }
   }
 
@@ -102,9 +117,19 @@
     }
   }
 
-  a.all-posts {
-    margin-top: 20px;
-    margin-bottom: 10px;
+  div.links a {
+    display: block;
   }
 
+  div.btn-wrap.all-posts {
+    width: 190px;
+    a {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  div#about-me {
+    margin-top: 50px;
+  }
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>  5 Reasons Why Building Sites with Jekyll Rocks |  Will Hitchcock </title>
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/icons.css">
+  <link rel="stylesheet" href="/css/base.css">
+
+  
+    <link rel="stylesheet" href="/css/post.css">
+  
+    <link rel="stylesheet" href="/css/syntax.css">
+  
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+</head>
+<body>
+  <!--[if lte IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div id="content-wrap">
+    <div id="content" class="blog-post">
+      
+<div class="image-wrap">
+  
+    <span class="main-image" data-src="/blog/img/half-dome.jpg">
+  
+</div>
+
+ 
+<div class="article-wrap">
+  <article>
+    <h1>5 Reasons Why Building Sites with Jekyll Rocks</h1>
+    <div class="meta">
+      <img src="/img/profilepic.jpg" width="25" alt="Will Hitchcock profile">
+      <p>
+        <span class="author">Will Hitchcock</span>
+        <span class="published">12 September 2013</span>
+      </p>
+    </div>
+    <div class="post-content"><p>A few weeks ago I set out on a project to build myself a new blog. When I sat down to start spec’ing out the project my first thought was to build the whole thing with WordPress. I had built projects on WordPress before, was familiar with the platform, and knew that it had all of the features that I wanted for my blog.</p>
+
+<p>As I unzipped the 12.5MB WordPress folder to begin the &#8220;famous 5-minute installation&#8221; process I remembered just how bloated and cumbersome WordPress actually is. Did I really need this entire framework to put up a short post every few weeks?</p>
+
+<p>That&#8217;s when I realized that I didn&#8217;t need comments, I didn&#8217;t need user accounts, I didn&#8217;t need a database, and I REALLY didn&#8217;t need PHP. In short, I didn&#8217;t need WordPress.</p>
+
+<p>After a little bit of research I discovered that there are actually a lot of lightweight alternatives to full blown content management systems like WordPress. These frameworks offer much more functionality than if you were building out a static site by hand, but have significantly less overhead than a CMS like WordPress.</p>
+
+<p>A real standout to me, and the framework that I ultimately settled on, was Jekyll. Jekyll is described as a blog-aware static site generator. The platform is written in Ruby and runs in the command line to generate static sites from templates, markup, and markdown that you write.</p>
+
+<p>My first experience with Jekyll was so great that I wanted to share the top 5 reasons why I love developing sites with it.</p>
+
+<h2 id='1_jekyll_is_dead_simple'>1. Jekyll is dead simple</h2>
+
+<p>Getting started with Jekyll is insanely easy. Install the gem, run the install, start the Jekyll server and you&#8217;re good to go. You don&#8217;t have to download megabytes worth of files, there&#8217;s only one configuration file to fill out, and you only need to know the very basics of command line to get it up and running.</p>
+
+<p>The awesome simplicity of Jekyll is not only found in the installation and configuration. Jekyll has just enough features to make it perfect for a simple blog, a portfolio site, or any kind of static site with multiple pages and/or layouts. Because of the bare-bones feature set, learning the basics of what Jekyll can and can&#8217;t do takes minutes rather than days or weeks.</p>
+
+<h2 id='2_templates_layouts_and_posts'>2. Templates, Layouts, and Posts</h2>
+
+<p>The real power of Jekyll lies in the integrated templating engine and the ability to specify layouts for your content. The liquid templating engine (created by Shopify) allows you to define variables, insert conditionals, loop through arrays, and do pretty much anything you would expect from a templating engine.</p>
+
+<p>Layouts are also exactly what you would expect from a CMS. In every page, post, or other content item that you create, whether HTML or markdown, you can define a page layout. Layouts allow you to completely eliminate the unnecessary repetition of writing boilerplate code like navigation or footers by automatically wrapping your content when the site compiles.</p>
+
+<p>Jekyll is described a being a &#8220;blog-aware&#8221; platform. This means that the concept of a post is built right into the framework. Posts can be any kind of content that you want them to be: for a blog it would be an article, and for a portfolio it would be a project. Posts can be created with either markdown or plain HTML, and at the beginning of every post is a special section of content called the front matter. This section allows you to define page variables like titles, configuration settings, and even categories. It&#8217;s easy to add custom variables to the front matter that can then be access with template tags in the page template itself.</p>
+
+<h2 id='3_server'>3. Server</h2>
+
+<p>One of the biggest difficulties with developing WordPress sites is getting them up and running on your dev machine. You can use PHP, Apache, and MySQL locally using MAMP or something similar, but it&#8217;s always a hassle. Once you are done developing your site, you then need to worry about getting the same thing working on your actual web server which, if you are not familiar with the intricacies of WordPress, can be a huge ordeal.</p>
+
+<p>Jekyll makes local development a breeze. Once you have Jekyll installed, all you need to do is run <code>jekyll serve -w</code> in the command line and you can immediately start navigating your compiled site at <code>localhost:4000</code>. Appending <code>-w</code> when you start the server will force Jekyll to recompile the site every time it detects a change in the file structure. Used in conjunction with LiveReload, development becomes seamless.</p>
+
+<h2 id='4_plays_well_with_grunt__livereload'>4. Plays well with Grunt &amp; LiveReload</h2>
+
+<p>One thing that Jekyll does not have is built in compilers for SASS, CoffeeScript, or any other languages that need compiling before they can be used. My favorite solution for this stuff has always been grunt.js. If you are not familiar with Grunt, it is a JavaScript based task runner that can be configured to do just about anything to your assets from compiling SASS to minification to JavaScript testing. Grunt can easily be set up to compile <code>.scss</code> and <code>.coffee</code> files when they change, rebuild the Jekyll site, and then with the help of LiveReload, refresh the page when everything is done. Jekyll, Grunt, and LiveReload working together is a killer combination.</p>
+
+<h2 id='5_deployment_made_easy'>5. Deployment made easy</h2>
+
+<p>When you are finally ready to deploy your project to the web, your compiled site will be there ready to go with all of your assets in the <code>_sites/</code> directory. All you need to do is upload the contents of this directory to your server and you&#8217;re good to go.</p>
+
+<p>One of the things that really attracted me to Jekyll was its ability to easily integrate with Github Pages. When you create a free account on Github, you are given your very own space on Github Pages at <code>[username].github.io/</code>. By creating a repository with a matching naming convention (<code>[username].github.io</code>), any files that you push to that repo will be accessible from your Github Page URL.</p>
+
+<p>When my site was ready to go live I pushed the new files out to my Github repository and changed the A name on my name server. Now my pages are served up from Github, but appear at my own domain. The best part about it is that it&#8217;s free!</p>
+
+<h2 id='conclusions'>Conclusions</h2>
+
+<p>Those are just a few reasons that I have really grown to appreciate Jekyll. From here on out, I plan on using Jekyll as my go-to for small projects. The best way to experience just how awesome Jekyll can be is to try it out for yourself. Next time you are starting a new project, think about giving Jekyll a shot.</p>
+
+<h2 id='resources'>Resources</h2>
+
+<p>Here are a few resources that I found to be helpful when I was getting started with Jekyll. If you have other resources that provide a good introduction to Jekyll, feel free to tweet at me (@willhitchcock) and I will add them to the list.</p>
+<div class='links'>
+<p><a href='http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/'>Building Static Sites with Jekyll</a> <a href='http://www.thedjpetersen.com/blog/static_web_frameworks/'>Static Web Frameworks</a> <a href='http://jekyllrb.com/'>Jekyll project page and docs</a></p>
+</div></div>
+    <div class="btn-wrap all-posts">
+      <a class="btn" href="/blog/">
+        <span class="icon icon-arrow-left"></span>
+        Back to posts
+      </a>      
+    </div>
+    <div id="about-me">
+  <div class="row">
+    <div class="large-3 small-4 columns">
+      <img src="/img/profiles/will-profile.jpg" alt="" class="profile">
+    </div>
+    <div class="large-9 small-12 columns">
+      <p>
+        Will Hitchcock is a maker, thinker, and explorer. He gets excited when he's challenged and loves the opportunity to learn and collaborate. He is passionate about building things on the web. When the computer is off, he likes to rock climb and generally be outside.    
+      </p>
+      <p>
+        Visit Will at <a href="http://campfourcreative.com/" target="_blank">Camp Four Creative</a> or tweet <a href="https://twitter.com/willhitchcock" target="_blank">@willhitchcock</a>.
+      </p>      
+    </div>
+  </div>
+</div>
+  </article>
+</div>
+  
+
+      <footer class="row">
+        <div class="large-12 small-12 columns">
+          &copy;2013 Will Hitchcock | willhitchcock.com
+        </div>
+      </footer>
+    </div> <!-- end of content -->    
+  </div>
+
+  <script src="/javascripts/libs/jquery-1.7.1.min.js"></script>
+  <script src="/javascripts/plugins.js"></script>
+
+  
+    <script type="text/javascript" src="/javascripts/base.js"></script>
+  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20413357-2', 'hitchcockwill.github.io');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
