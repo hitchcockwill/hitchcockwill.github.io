@@ -131,5 +131,9 @@
 
   div#about-me {
     margin-top: 50px;
+    div.about-me-wrap {
+      max-width: 640px;
+      margin: 40px auto;
+    }
   }
 }

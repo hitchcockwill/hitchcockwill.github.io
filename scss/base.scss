@@ -99,6 +99,7 @@ div#about-me {
   background: $off-white2;
   img.profile {
     border-radius: 200px;
+    border: 8px solid darken($off-white2, 4%);
   }
   p {
     font-size: .95em;

@@ -46,7 +46,7 @@ When my site was ready to go live I pushed the new files out to my Github reposi
 Those are just a few reasons that I have really grown to appreciate Jekyll. From here on out,  I plan on using Jekyll as my go-to for small projects. The best way to experience just how awesome Jekyll can be is to try it out for yourself. Next time you are starting a new project, think about giving Jekyll a shot.
 
 ## Resources
-Here are a few resources that I found to be helpful when I was getting started with Jekyll. If you have other resources that provide a good introduction to Jekyll, feel free to tweet at me (@willhitchcock) and I will add them to the list.
+Here are a few resources that I found to be helpful when I was getting started with Jekyll. If you have other resources that provide a good introduction to Jekyll, feel free to tweet at me ([@willhitchcock](https://twitter.com/willhitchcock)) and I will add them to the list.
 
 <div class="links" markdown="1">
   [Building Static Sites with Jekyll](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)

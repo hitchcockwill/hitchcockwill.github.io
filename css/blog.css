@@ -1,19 +1,25 @@
 /* line 3, ../scss/blog.scss */
-#content.blog-layout {
+#content.blog-layout div.blog-content {
   max-width: 600px;
   margin: 60px auto;
 }
 /* line 7, ../scss/blog.scss */
-#content.blog-layout h3 {
+#content.blog-layout div.blog-content h1 {
+  font-size: 73px;
+  line-height: 52px;
+  margin-bottom: 28px;
+}
+/* line 13, ../scss/blog.scss */
+#content.blog-layout div.blog-content h3 {
   font-size: 22px;
   line-height: 20px;
 }
-/* line 12, ../scss/blog.scss */
-#content.blog-layout p.published {
+/* line 18, ../scss/blog.scss */
+#content.blog-layout div.blog-content p.published {
   color: #999999;
 }
 
-/* line 17, ../scss/blog.scss */
+/* line 23, ../scss/blog.scss */
 h2.posts {
   margin: 50px 0 10px;
   text-transform: uppercase;
@@ -21,15 +27,15 @@ h2.posts {
   color: #999999;
 }
 
-/* line 24, ../scss/blog.scss */
+/* line 30, ../scss/blog.scss */
 ul.post-list {
   margin: 0 0 50px;
 }
-/* line 26, ../scss/blog.scss */
+/* line 32, ../scss/blog.scss */
 ul.post-list li {
   border-top: 1px solid #ececec;
 }
-/* line 28, ../scss/blog.scss */
+/* line 34, ../scss/blog.scss */
 ul.post-list li > a {
   padding: 16px 0;
   display: block;
@@ -45,15 +51,15 @@ ul.post-list li > a:after {
   display: table;
   clear: both;
 }
-/* line 35, ../scss/blog.scss */
+/* line 41, ../scss/blog.scss */
 ul.post-list li > a:hover {
   color: #f95759;
 }
-/* line 37, ../scss/blog.scss */
+/* line 43, ../scss/blog.scss */
 ul.post-list li > a:hover div.image-wrap {
   box-shadow: 0 0 0 5px #f95759;
 }
-/* line 42, ../scss/blog.scss */
+/* line 48, ../scss/blog.scss */
 ul.post-list li > a div.image-wrap {
   height: 30px;
   width: 30px;
@@ -69,19 +75,29 @@ ul.post-list li > a div.image-wrap {
   -o-transition: box-shadow 0.35s;
   transition: box-shadow 0.35s;
 }
-/* line 53, ../scss/blog.scss */
+/* line 59, ../scss/blog.scss */
 ul.post-list li > a div.image-wrap img {
   height: 30px;
 }
-/* line 58, ../scss/blog.scss */
+/* line 64, ../scss/blog.scss */
 ul.post-list li > a h3 {
   margin: 0 150px 0 40px;
 }
-/* line 61, ../scss/blog.scss */
+/* line 67, ../scss/blog.scss */
 ul.post-list li > a p {
   margin: 0;
   position: absolute;
   right: 0;
   top: 11px;
   font-size: .9em;
+}
+
+/* line 78, ../scss/blog.scss */
+div.blog-layout #about-me {
+  margin-top: 50px;
+}
+/* line 80, ../scss/blog.scss */
+div.blog-layout #about-me div.about-me-wrap {
+  max-width: 640px;
+  margin: 40px auto;
 }

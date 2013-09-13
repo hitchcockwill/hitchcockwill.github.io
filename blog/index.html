@@ -4,33 +4,30 @@ title: Here at Camp.
 className: blog-layout
 styles: ["blog.css"]
 ---
- 
-<div class="title">
-  <h1>Here at Camp.</h1>
-  <p>A place to share my feelings about frontend development, design, and anything else that I need to stand on a soap box about.</p>
+
+<div class="blog-content">
+  <div class="title">
+    <h1>Here at Camp.</h1>
+    <p>A place to share my feelings about frontend development, design, and anything else that I need to stand on a soap box about.</p>
+  </div>
+   
+  <h2 class="posts">All Posts</h2>
+  <ul class="post-list entries">
+    {% for post in site.posts %}
+   
+    <li>
+      <a href="{{ post.url }}" title="Go to {{post.title}}">
+        <div class="image-wrap">
+          <img src="{{post.image}}" height="30" alt="{{post.title}} thumbnail image">
+        </div>
+        <h3>{{ post.title }}</h3>
+        <p class="published">{{post.date | date_to_long_string}}</p>
+      </a>
+    </li>
+   
+    {% endfor %}
+  </ul>
+
 </div>
- 
-<h2 class="posts">All Posts</h2>
-<ul class="post-list entries">
-  {% for post in site.posts %}
- 
-  <li>
-    <a href="{{ post.url }}" title="Go to {{post.title}}">
-      <div class="image-wrap">
-        <img src="{{post.image}}" height="30" alt="{{post.title}} thumbnail image">
-      </div>
-      <h3>{{ post.title }}</h3>
-      <p class="published">{{post.date | date_to_long_string}}</p>
-    </a>
-  </li>
- 
-  {% endfor %}
-</ul>
 
-<div class="blog-footer">
-  <p>To get updates on new posts or share your thoughts on what is already out there, just send me a tweet <a href="https://twitter.com/willhitchcock" target="_blank" title="Will Hitchcock's Twitter">@willhitchcock</a> or feel free to <a href="mailto:will@campfourcreative.com" target="_blank" title="Email Will Hitchcock">email me</a>.</p>
-
-  <p>To learn more about what I'm working on right now, check out <a href="http://campfourcreative.com/" title="Visit Camp Four Creative's site">Camp Four Creative</a>.</p>
-
-  {% include about_me.html %}
-</div>
+{% include about_me.html %}

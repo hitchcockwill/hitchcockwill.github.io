@@ -95,14 +95,15 @@ div#about-me {
 /* line 100, ../scss/base.scss */
 div#about-me img.profile {
   border-radius: 200px;
+  border: 8px solid #ededed;
 }
-/* line 103, ../scss/base.scss */
+/* line 104, ../scss/base.scss */
 div#about-me p {
   font-size: .95em;
   line-height: 1.8em;
   font-style: italic;
 }
-/* line 107, ../scss/base.scss */
+/* line 108, ../scss/base.scss */
 div#about-me p:last-child {
   margin-bottom: 0;
 }
