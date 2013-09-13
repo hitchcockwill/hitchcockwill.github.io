@@ -18,7 +18,7 @@ styles: ["blog.css"]
     <li>
       <a href="{{ post.url }}" title="Go to {{post.title}}">
         <div class="image-wrap">
-          <img src="{{post.image}}" height="30" alt="{{post.title}} thumbnail image">
+          <img src="{{post.image_thumb}}" height="30" alt="{{post.title}} thumbnail image">
         </div>
         <h3>{{ post.title }}</h3>
         <p class="published">{{post.date | date_to_long_string}}</p>

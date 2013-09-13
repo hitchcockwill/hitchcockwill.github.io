@@ -1,6 +1,7 @@
 ---
 layout: blog_post
 image: /blog/img/flatit-1400.jpg
+image_thumb: /blog/img/flatit-1400-thumb.jpg
 title: Flatit, cleaning up reddit's room
 ---
 

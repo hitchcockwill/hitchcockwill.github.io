@@ -1,6 +1,7 @@
 ---
 layout: blog_post
 image: /blog/img/code-background.jpg
+image_thumb: /blog/img/code-background-thumb.jpg
 title: 5 Reasons Why Jekyll Rocks
 ---
 A few weeks ago I set out on a project to build myself a new blog. When I sat down to start spec’ing out the project my first thought was to build the whole thing with WordPress. I had built projects on WordPress before, was familiar with the platform, and knew that it had all of the features that I wanted for my blog.
