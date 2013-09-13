@@ -11,7 +11,6 @@ setLandingHeight = ->
   $wrap.children().css("height", height)
 
   $landing = $wrap.find("#landing-content > div")
-  console.log "landing height: ", $landing.height()
   diff = (height-$landing.height())/2
   $landing.css("padding-top", diff*.6)
 
@@ -52,7 +51,6 @@ $(document).ready ->
   windowResizeTimer = ->
     setTimeout ->
       if resized
-        console.log "resized"
         resized = false
         window.clearTimeout(timeout)
         setLandingHeight()

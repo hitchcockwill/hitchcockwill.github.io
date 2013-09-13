@@ -77,7 +77,6 @@
     $("body").css("height", height);
     $wrap.children().css("height", height);
     $landing = $wrap.find("#landing-content > div");
-    console.log("landing height: ", $landing.height());
     diff = (height - $landing.height()) / 2;
     return $landing.css("padding-top", diff * .6);
   };
@@ -123,7 +122,6 @@
     windowResizeTimer = function() {
       return setTimeout(function() {
         if (resized) {
-          console.log("resized");
           resized = false;
           window.clearTimeout(timeout);
           setLandingHeight();
