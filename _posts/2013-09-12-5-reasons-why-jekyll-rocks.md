@@ -50,8 +50,8 @@ Those are just a few reasons that I have really grown to appreciate Jekyll. From
 Here are a few resources that I found to be helpful when I was getting started with Jekyll. If you have other resources that provide a good introduction to Jekyll, feel free to tweet at me ([@willhitchcock](https://twitter.com/willhitchcock)) and I will add them to the list.
 
 <div class="links" markdown="1">
-  [Building Static Sites with Jekyll](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)
   [Static Web Frameworks](http://www.thedjpetersen.com/blog/static_web_frameworks/)
-  [Jekyll project page and docs](http://jekyllrb.com/)  
+  [Jekyll project page and docs](http://jekyllrb.com/)
+  [Building Static Sites with Jekyll (outdated)](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)
 </div>
 
